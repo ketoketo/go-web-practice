@@ -9,5 +9,5 @@ func main() {
 		Addr:    "localhost:8080",
 		Handler: nil,
 	}
-	server.ListenAndServe()
+	server.ListenAndServeTLS("../tls/server.crt", "../tls/server.key")
 }
