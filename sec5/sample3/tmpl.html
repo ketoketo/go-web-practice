@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <title>Go Web</title>
+</head>
+
+<body>
+    <ul>
+        {{ range . }}
+            <li>{{ . }}</li>
+        {{ else }}
+         <p>表示するものがない</p>
+        {{ end }}
+    </ul>
+</body>
+
+</html>
